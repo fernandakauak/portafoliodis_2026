@@ -6,7 +6,7 @@
     </header>
 </template>
 
-<style>
+<style scoped>
     .logo {
         width: 60%;
         margin: 2% auto;
