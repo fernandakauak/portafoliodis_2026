@@ -59,10 +59,9 @@
 
 <style scope>
     section.about {
-        background-image: url(../assets/img/bg-about.jpg);
-        background-size: 100%;
-        background-blend-mode: screen;
+        background-image: url("../assets/img/bg-header.jpg");
         background-color: midnightblue;
+        background-blend-mode: color-burn;
     }
 
     .saludo {
@@ -78,7 +77,12 @@
     }
 
     .saludo h1 {
-        width: 100%;
+        width: 80%;
+        background-color: white;
+        border-radius: 50px;
+        padding: 2%;
+        margin: 1% auto 4%;
+        color: midnightblue;
     }
 
     .presentacion {
@@ -87,6 +91,7 @@
         color: lightgray;
         padding: 2%;
         margin: auto;
+        border: 10px dashed white;
     }
 
     .presentacion p {
@@ -168,5 +173,4 @@
         background-color: lightblue;
         border-radius: 20px;
     }
-
 </style>
