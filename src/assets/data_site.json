@@ -75,5 +75,43 @@
         { 
             "nombre": "Investigación previa",
             "class": "pcnt90"
+    }],
+    "trabajos": [ 
+        { 
+            "nombre": "Patrimonio Ferroviario", 
+            "img": "src/assets/img/previas/dis_001.png" 
+        },
+        { 
+            "nombre": "ParqueMet", 
+            "img": "src/assets/img/previas/dis_002.png" 
+        },
+        { 
+            "nombre": "Circuito Industrial Obrero", 
+            "img": "src/assets/img/previas/dis_003.png" 
+        },
+        { 
+            "nombre": "Carrie",
+            "img": "src/assets/img/previas/dis_009.png" 
+        },
+        { 
+            "nombre": "Branding", 
+            "img": "src/assets/img/previas/dis_004.png" 
+        },
+        { 
+            "nombre": "Ludocrónicas", 
+            "img": "src/assets/img/previas/dis_006.png" 
+    }],
+    "prototipos": [ 
+        { 
+            "nombre": "Prototipo Proyecto Coursera 1", 
+            "img": "src/assets/img/previas/prot_001.png" 
+        },
+        { 
+            "nombre": "Prototipo Proyecto Coursera 2", 
+            "img": "src/assets/img/previas/prot_002.png" 
+        },
+        { 
+            "nombre": "Prototipo Proyecto Park&Go", 
+            "img": "src/assets/img/previas/prot_003.png" 
     }]
 }

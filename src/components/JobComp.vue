@@ -1,32 +1,52 @@
-<script></script>
+<script>
+    import { ref } from 'vue';
+    import job from '../assets/data_site.json';
+
+    export default {
+        data() {
+            return {
+                portafolio: job
+            };
+        },
+    };
+</script>
 
 <template>
     <section>
-        <h1>Trabajos: Encargos y Proyectos</h1>
+        <h1>Encargos y Proyectos</h1>
         <p>He estado en varios tipos de ambientes por lo cual he desarrollado soluciones para las distintas necesidades de cada uno. Aquí presento tanto encargos realizados para terceros como proyectos personales.</p>
-    </section>
     
-    <article>
-        <h2></h2>
-        <p>Patrimonio Ferroviario</p>
-        <p>Totem informativo</p>
-        <p>Circuito</p>
-        <p>Veronikas</p>
-        <p>Cordis Machina</p>
-        <p>Orgullo</p>
-        <p>Tralalá</p>
-        <p>Manejo de FTP</p>
-        <p>Standup</p>
-    </article>
+        <h2>Trabajos</h2>
+        <article class="portafolio">
+            <div class="trabajo" v-for="folio in portafolio.trabajos" :key="folio.id">
+                <img v-bind:src="folio.img" alt="{{ folio.nombre }}">
+                <h3>{{ folio.nombre }}</h3>
+            </div>
+        </article>
 
-    <article>
-        <h2>Prototipados</h2>
-        <p>Coursera1</p>
-        <p>Coursera2</p>
-        <p>Parkandgo</p>
-
-    </article>
-
+        <h2>Prototipos</h2>
+        <article class="portafolio">
+            <div class="prototipo" v-for="proto in portafolio.prototipos" :key="proto.id">
+                <img v-bind:src="proto.img" alt="{{ proto.nombre }}">
+                <h3>{{ proto.nombre }}</h3>
+            </div>
+        </article>
+    </section>
 </template>
 
-<style></style>
+<style>
+    .portafolio {
+        width: 98%;
+        padding: 2% 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1%;
+    }
+
+    .trabajo, .prototipo {
+        width: 22%;
+        margin: 1%;
+    }
+
+</style>
