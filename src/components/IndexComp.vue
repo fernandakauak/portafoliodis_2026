@@ -1,21 +1,16 @@
-<script></script>
+<script setup>
+    import { useRoute, useRouter } from 'vue-router';
+    import HeaderComp from './HeaderComp.vue';
+    import AboutComp from './AboutComp.vue';
+    import JobComp from './JobComp.vue';
+    import FooterComp from './FooterComp.vue';
+</script>
 
 <template>
-    <header>
-        <img class="logo" src="../assets/img/logo2026.png" alt="Fernanda Kauak">
-    </header>
+    <HeaderComp />
+    <AboutComp />
+    <JobComp />
+    <FooterComp />
 </template>
 
-<style scoped>
-    .logo {
-        width: 60%;
-        margin: 2% auto;
-    }
-
-    header {
-        background-image: url("../assets/img/bg-header.jpg");
-        background-size: contain;
-        width: 100%;
-        margin: 0;
-    }
-</style>
+<style></style>

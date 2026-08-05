@@ -1,8 +1,6 @@
 <script setup>
   import IndexComp from './components/IndexComp.vue';
-  import AboutComp from './components/AboutComp.vue';
-  import JobComp from './components/JobComp.vue';
-  import FooterComp from './components/FooterComp.vue';
+
 </script>
 
 <template>
@@ -12,9 +10,6 @@
     <a href="#">Trabajos</a>
   </nav>
   <IndexComp />
-  <AboutComp />
-  <JobComp />
-  <FooterComp />
 </template>
 
 <style scoped>

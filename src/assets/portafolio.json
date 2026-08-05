@@ -1,82 +1,5 @@
 {
-    "web": [ 
-        { 
-            "nombre": "HTML", 
-            "class": "pcnt90" 
-        },
-        { 
-            "nombre": "CSS3", 
-            "class": "pcnt95"
-        },
-        { 
-            "nombre": "Diseño Responsivo", 
-            "class": "pcnt90"
-        },
-        { 
-            "nombre": "JavaScript", 
-            "class": "pcnt70" 
-        },
-        { 
-            "nombre": "VueJS",
-            "class": "pcnt70"
-        },
-        { 
-            "nombre": "Bootstrap", 
-            "class": "pcnt90"
-        },
-        { 
-            "nombre": "Wordpress", 
-            "class": "pcnt80" 
-        },
-        { 
-            "nombre": "Git",
-            "class": "pcnt75"
-    }],
-
-    "software": [ 
-        { 
-            "nombre": "Illustrator", 
-            "class": "pcnt95" 
-        },
-        { 
-            "nombre": "Photoshop", 
-            "class": "pcnt90"
-        },
-        { 
-            "nombre": "InDesign", 
-            "class": "pcnt90" 
-        },
-        { 
-            "nombre": "Visual Studio Code",
-            "class": "pcnt90"
-        },
-        { 
-            "nombre": "Figma", 
-            "class": "pcnt75"
-        },
-        { 
-            "nombre": "Microsoft Office", 
-            "class": "pcnt90" 
-    }],
-
-    "otros": [ 
-        { 
-            "nombre": "Planificación", 
-            "class": "pcnt95" 
-        },
-        { 
-            "nombre": "Storytelling", 
-            "class": "pcnt90"
-        },
-        { 
-            "nombre": "Metodologías Agiles", 
-            "class": "pcnt85" 
-        },
-        { 
-            "nombre": "Investigación previa",
-            "class": "pcnt90"
-    }],
-    "trabajos": [ 
+    "portafolio": [ 
         { 
             "id": 1,
             "nombre": "Día de Los Patrimonios 2014-2016", 
@@ -118,8 +41,7 @@
             "cliente": "Fundación Ludocrónicas", 
             "avatar": "src/assets/img/previas/dis_006.png",
             "informacion": "Acá va a ir"
-    }],
-    "prototipos": [ 
+        },
         { 
             "nombre": "Prototipo Proyecto Coursera 1", 
             "cliente": "Proyecto Personal/Educativo",

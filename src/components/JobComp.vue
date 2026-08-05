@@ -1,14 +1,22 @@
-<script>
+<script setup>
     import { ref } from 'vue';
-    import job from '../assets/data_site.json';
+    import { useRoute, useRouter } from 'vue-router';
+    const route  = useRoute();
+    const router = useRouter();
+   // import job from '../assets/data_site.json';
+    import { trabajos, prototipos } from '../assets/data_site.json';
 
-    export default {
+    /*export default {
         data() {
             return {
                 portafolio: job
             };
         },
-    };
+    };*/
+
+    function detalle(id) {
+        router.push({name:'foliodetalle', params:{id}});
+    }
 </script>
 
 <template>
@@ -20,16 +28,18 @@
     
         <h2>Trabajos</h2>
         <article class="portafolio">
-            <div class="trabajo" v-for="folio in portafolio.trabajos" :key="folio.id">
-                <img v-bind:src="folio.img" alt="{{ folio.nombre }}">
+            <div class="trabajo" v-for="folio in trabajos" :key="folio.id">
+                <img v-bind:src="folio.avatar" alt="{{ folio.nombre }}">
+                <button @click="detalle(folio.id)">Ver</button>
                 <h3>{{ folio.nombre }}</h3>
             </div>
         </article>
 
         <h2>Prototipos</h2>
         <article class="portafolio">
-            <div class="prototipo" v-for="proto in portafolio.prototipos" :key="proto.id">
-                <img v-bind:src="proto.img" alt="{{ proto.nombre }}">
+            <div class="prototipo" v-for="proto in prototipos" :key="proto.id">
+                <img v-bind:src="proto.avatar" alt="{{ proto.nombre }}">
+                <button @click="detalle(proto.id)">Ver</button>
                 <h3>{{ proto.nombre }}</h3>
             </div>
         </article>

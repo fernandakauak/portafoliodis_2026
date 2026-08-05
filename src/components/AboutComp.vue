@@ -25,7 +25,7 @@
             </div>
         </article>
 
-        <h2>Conocimientos</h2>
+        <h1>Conocimientos</h1>
 
         <div class="datos">
             <article class="conocimiento">
@@ -76,7 +76,7 @@
         height: 320px;
     }
 
-    .saludo h1 {
+    .saludo h1, .about h1 {
         width: 80%;
         background-color: white;
         border-radius: 50px;
@@ -85,10 +85,14 @@
         color: midnightblue;
     }
 
+    .about h1 {
+        width: 50%;
+    }
+
     .presentacion {
         width: 80%;
         background-color: blue;
-        color: lightgray;
+        color: white;
         padding: 2%;
         margin: auto;
         border: 10px dashed white;
@@ -126,6 +130,7 @@
         color: white;
         border: 1px solid darkblue;
         padding: 1%;
+        font-size: 18px;
     }
 
     .pcnt95 {
