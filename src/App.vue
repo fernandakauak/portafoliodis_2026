@@ -5,11 +5,11 @@
 
 <template>
   <nav>
-    <a href="#">Inicio</a>
-    <a href="#">Acerca de</a>
-    <a href="#">Trabajos</a>
+    <router-link :to="{ name:'inicio' }">Inicio</router-link>
+    <router-link :to="{ name:'acercaDe' }">Acerca de</router-link>
+    <router-link :to="{ name:'trabajos' }">Trabajos</router-link>
   </nav>
-  <IndexComp />
+  <router-view />
 </template>
 
 <style scoped>

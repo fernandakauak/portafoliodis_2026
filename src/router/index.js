@@ -1,8 +1,8 @@
+import { createRouter, createWebHistory } from 'vue-router';
 import IndexComp from "../components/IndexComp.vue";
 import JobComp from "../components/JobComp.vue";
 import DetailComp from "../components/DetailComp.vue";
-
-import { createRouter, createWebHistory } from 'vue-router';
+import AboutComp from '../components/AboutComp.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,8 +14,18 @@ const router = createRouter({
             component: IndexComp
         },
         {
-            path: '/:id',
-            name: 'foliodetalle',
+            path: '/acerca',
+            name:'acercaDe',
+            component: AboutComp
+        },
+        {
+            path: '/trabajos',
+            name:'trabajos',
+            component: JobComp
+        },
+        {
+            path: '/detalle/:id',
+            name: 'detalle',
             component: DetailComp,
             props: true
         },

@@ -1,21 +1,11 @@
 <script setup>
     import { ref } from 'vue';
-    import { useRoute, useRouter } from 'vue-router';
-    const route  = useRoute();
+    import { useRouter } from 'vue-router';
     const router = useRouter();
-   // import job from '../assets/data_site.json';
     import { trabajos, prototipos } from '../assets/data_site.json';
 
-    /*export default {
-        data() {
-            return {
-                portafolio: job
-            };
-        },
-    };*/
-
     function detalle(id) {
-        router.push({name:'foliodetalle', params:{id}});
+        router.push({ name: 'detalle', params: {id} });
     }
 </script>
 
@@ -30,8 +20,9 @@
         <article class="portafolio">
             <div class="trabajo" v-for="folio in trabajos" :key="folio.id">
                 <img v-bind:src="folio.avatar" alt="{{ folio.nombre }}">
-                <button @click="detalle(folio.id)">Ver</button>
+                <router-link :to="{ name: 'detalle', params: {id: folio.id}}">HAZ CLICK</router-link>
                 <h3>{{ folio.nombre }}</h3>
+                <button @click.prevent="detalle(folio.id)">Ver</button>
             </div>
         </article>
 
@@ -46,7 +37,7 @@
     </section>
 </template>
 
-<style>
+<style scoped>
     .registro { 
         background-image: url("../assets/img/bg-header.jpg");
         background-color: grey;
@@ -69,7 +60,7 @@
     }
 
     .registro h3 {
-        margin: 1% auto;
+        margin: 0 auto;
         width: 80%;
         background-color: darkslategrey;
         color: white;
@@ -98,5 +89,14 @@
     .trabajo, .prototipo {
         width: 22%;
         margin: 1%;
+    }
+
+    .trabajo button, .prototipo button {
+        background-color: white;
+        color: midnightblue;
+        padding: 2%;
+        width: 50%;
+        border: 0;
+        font-weight: bold;
     }
 </style>
