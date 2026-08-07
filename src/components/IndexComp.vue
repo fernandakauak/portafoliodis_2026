@@ -1,12 +1,6 @@
 <script setup>
     import { useRouter } from 'vue-router';
     const router = useRouter();
-
-    /*import HeaderComp from './HeaderComp.vue';
-    import AboutComp from './AboutComp.vue';
-    import JobComp from './JobComp.vue';
-    import FooterComp from './FooterComp.vue';
-    import DetailComp from './DetailComp.vue';*/
 </script>
 
 <template>
@@ -28,12 +22,3 @@
         margin: 0;
     }
 </style>
-
-<!--<template>
-    <HeaderComp />
-    <AboutComp />
-    <JobComp />
-    <FooterComp />
-</template>
-
-<style></style>-->

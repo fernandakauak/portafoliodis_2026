@@ -11,31 +11,24 @@
 
     const encargo = computed(()=>{
         return trabajos.find((t)=> t.id === Number(props.id));
-        //return prototipos.find((p)=> p.id === Number(props.id));
     });
-
-    console.log('query:',route.query);
-    console.log('params:',route.params);
-
 </script>
 
 <template>
     <section class="fichadetalle">
-        <button class="volver" @click="router.back()">Volver</button>
             <div class="info">
+                <button class="volver" @click="router.back()">Volver</button>
                 <h1>{{ encargo.nombre }}</h1>
                 <h2>Cliente: {{ encargo.cliente }}</h2>
                 <p>{{ encargo.informacion }}</p>
-            </div>
-            
-            <!--<div v-else-if="prototipos">
-                <div class="info">
-                    <h1>{{ encargo.nombre }}</h1>
-                    <h2>Cliente: {{ encargo.cliente }}</h2>
-                    <p>{{ encargo.informacion }}</p>
+
+                <div class="galeria">
+                    <img v-bind:src="encargo.img1" alt="{{ encargo.nombre }}">
+                    <img v-bind:src="encargo.img2" alt="{{ encargo.nombre }}">
+                    <img v-bind:src="encargo.img3" alt="{{ encargo.nombre }}">
+                    <img v-bind:src="encargo.img4" alt="{{ encargo.nombre }}">
                 </div>
-            </div>-->
-            <!--<p v-else>Este elemento no existe en el portafolio.</p>-->
+            </div>
     </section>
 </template>
 
@@ -49,6 +42,35 @@
     .fichadetalle .info {
         background-color: midnightblue;
         padding: 1%;
-        width: 78%;
+        width: 88%;
+        margin: auto;
+        color: white;
+    }
+
+    .fichadetalle .info p {
+        font-size: 20px;
+    }
+
+    .info .galeria {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;;
+        gap: 2%;
+    }
+
+    .info .galeria img {
+        width: 48%;
+        height: 100%;
+        margin-bottom: 2%;
+    }
+
+    .fichadetalle button {
+        border: none;
+        padding: 1% 2%;
+        background-color: white;
+        margin: auto;
+        color: midnightblue;
+        font-size: 18px;
+        font-weight: bold;
     }
 </style>
