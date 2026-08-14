@@ -21,7 +21,7 @@
                 <h1>{{ encargo.nombre }}</h1>
                 <h2>Cliente: {{ encargo.cliente }}</h2>
                 <p>{{ encargo.informacion }}</p>
-                <h3>Este proyecto <a :href="encargo.linkdemo">{{ encargo.haydemo }}</a></h3>
+                <h3>Este proyecto <a :href="encargo.linkdemo" target="_blank">{{ encargo.haydemo }}</a></h3>
 
                 <div class="galeria">
                     <img v-bind:src="encargo.img1" alt="{{ encargo.nombre }}">
@@ -36,8 +36,8 @@
 <style scoped>
     .fichadetalle {
         background-image: url("../assets/img/bg-header.jpg");
-        background-color: grey;
-        background-blend-mode: color-burn;
+        background-color: midnightblue;
+        background-blend-mode: screen;
     }
 
     .fichadetalle .info {

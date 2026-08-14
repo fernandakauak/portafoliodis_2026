@@ -21,6 +21,7 @@
                 <div class="presentacion">
                     <p>Soy diseñadora gráfica y me he dedicado al diseño web, material de difusión y asesoría en rubros de cultura, PyMEs, tecnología, banca y seguros, además de proyectos multidisciplinarios con desarrolladores back-end, investigadores y administradores de proyecto.</p>
                     <p>También tengo estudios en marketing digital, gestión de proyectos y actualmente me estoy especializando en el desarrollo front-end para la creación de aplicaciones digitales.</p>
+                    <p>Para más información puedes leer <a href="">mi CV</a> y ver mi <a href="http://www.github.com/fernandakauak">cuenta en Github</a>.</p>
                 </div>
             </div>
         </article>
@@ -49,11 +50,6 @@
                 </div>
             </article>
         </div>        
-
-        <aside class="contacto">
-            <h1>¿Quieres conversar?</h1>
-            <h3>Puedes leer mi CV <a href="">aquí</a> y ver mi Github <a href="">acá</a></h3>
-        </aside>
     </section>
 </template>
 
@@ -87,6 +83,15 @@
 
     .about h1 {
         width: 50%;
+    }
+
+    .saludo a {
+        padding: 5px;
+        background-color: white;
+        color: midnightblue;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: bold;
     }
 
     .presentacion {
@@ -155,27 +160,5 @@
 
     .pcnt70 {
         width: 70%;
-    }
-
-    .contacto {
-        width: 60%;
-        background-color: darkslategrey;
-        color: lightgray;
-        padding: 2%;
-        margin: 2% auto;
-    }
-
-    .contacto h1 {
-        margin-top: 0;
-    }
-
-    .contacto a {
-        color: midnightblue;
-        text-decoration: none;
-        cursor: pointer;
-        text-transform: uppercase;
-        padding: 1% 2%;
-        background-color: lightblue;
-        border-radius: 20px;
     }
 </style>

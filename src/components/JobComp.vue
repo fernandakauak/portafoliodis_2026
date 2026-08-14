@@ -32,8 +32,8 @@
 <style scoped>
     .registro { 
         background-image: url("../assets/img/bg-header.jpg");
-        background-color: grey;
-        background-blend-mode: color-burn;
+        background-color: midnightblue;
+        background-blend-mode: screen;
     }
 
     .registro h1, .registro h2, .registro h3 {
@@ -43,6 +43,10 @@
         padding: 2%;
         margin: 1% auto 4%;
         color: darkslategrey;
+    }
+
+    .registro h1 {
+        margin: 1% auto 1%;
     }
 
     .registro h2 {
@@ -84,13 +88,18 @@
     }
 
     .trabajo button {
-        background-color: white;
-        color: midnightblue;
+        background-color: midnightblue;
+        color: white;
         padding: 2%;
-        width: 50%;
+        width: 30%;
         border: 0;
         font-weight: bold;
         font-size: 18px;
         cursor: pointer;
+    }
+
+    .trabajo button:hover {
+        color: midnightblue;
+        background-color: white;
     }
 </style>
