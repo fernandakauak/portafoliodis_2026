@@ -5,9 +5,10 @@
 
 <template>
   <nav>
-    <router-link :to="{ name:'inicio' }">Inicio</router-link>
-    <router-link :to="{ name:'acercaDe' }">Acerca de</router-link>
-    <router-link :to="{ name:'trabajos' }">Trabajos</router-link>
+    <router-link :to="{ name:'inicio' }" active-class="active">Inicio</router-link>
+    <router-link :to="{ name:'acercaDe' }" active-class="active">Acerca de</router-link>
+    <router-link :to="{ name:'trabajos' }" active-class="active">Trabajos</router-link>
+    <router-link :to="{ name:'contacto' }" active-class="active">Contacto</router-link>
   </nav>
   <router-view />
 </template>

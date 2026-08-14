@@ -1,17 +1,14 @@
 <script>
     import { ref } from 'vue';
-    import about from '../assets/data_site.json';
-
-    export default {
-        data() {
-            return {
-                habilidades: about
-            };
-        },
-    };
 </script>
 
 <template>
+    <section>
+        <h1>¡Conversemos!</h1>
+        <h3>Puedes encontrar más de mi trabajo en <a href="http://www.github.com/fernandakauak">Github</a> <br>
+            y también contactarme en <a href="">Linkedin</a>
+         </h3>
+    </section>
     <section class="about">
         <article class="saludo">
             <img src="../assets/img/avatar.png" alt="Foto Fernanda">

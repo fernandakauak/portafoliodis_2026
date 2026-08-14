@@ -21,6 +21,7 @@
                 <h1>{{ encargo.nombre }}</h1>
                 <h2>Cliente: {{ encargo.cliente }}</h2>
                 <p>{{ encargo.informacion }}</p>
+                <h3>Este proyecto <a :href="encargo.linkdemo">{{ encargo.haydemo }}</a></h3>
 
                 <div class="galeria">
                     <img v-bind:src="encargo.img1" alt="{{ encargo.nombre }}">
@@ -62,6 +63,23 @@
         width: 48%;
         height: 100%;
         margin-bottom: 2%;
+    }
+
+    .info h3 {
+        padding: 1%;
+        width: 40%;
+        margin: 1% auto 2%;
+        background-color: white;
+        color: midnightblue;
+    }
+
+    .info h3 a {
+        text-decoration: none;
+        margin: 0 1%;
+        padding: 1% 2%;
+        border-radius: 50px;
+        background-color: midnightblue;
+        color: white;
     }
 
     .fichadetalle button {

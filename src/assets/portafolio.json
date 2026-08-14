@@ -9,10 +9,10 @@
         },
         { 
             "id": 2,
-            "nombre": "Tótem Informafivo", 
-            "cliente": "Parque Metropolitano (ParqueMet)",
+            "nombre": "KlimatHaus", 
+            "cliente": "Encargo de Curso",
             "avatar": "src/assets/img/previas/dis_002.png",
-            "informacion": "Acá va a ir"
+            "informacion": "Aplicación de pronóstico del clima realizada en el Curso de Desarrollo de Aplicaciones Front-End (SENCE). Se utilizó VueJS para su desarrollo y los datos son simulados."
         },
         { 
             "id": 3,

@@ -3,6 +3,7 @@ import IndexComp from "../components/IndexComp.vue";
 import JobComp from "../components/JobComp.vue";
 import DetailComp from "../components/DetailComp.vue";
 import AboutComp from '../components/AboutComp.vue';
+import ContactComp from '../components/ContactComp.vue';
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,7 +29,13 @@ const router = createRouter({
             name: 'detalle',
             component: DetailComp,
             props: true
-        },
+        },,
+        {
+            path: '/contacto',
+            name: 'contacto',
+            component: ContactComp,
+            props: true
+        }
     ]
 });
 
