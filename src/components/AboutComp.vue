@@ -15,7 +15,7 @@
     <section class="about">
         <article class="saludo">
             <img src="../assets/img/avatar.png" alt="Foto Fernanda">
-            <div>
+            <div class="texto_saludo">
                 <h1>¡Hola! <br>
                 Me llamo Fernanda y este es mi portafolio</h1>
                 <div class="presentacion">
@@ -62,14 +62,14 @@
 
     .saludo {
         display: flex;
-        gap: 5%;
+        gap: 1%;
         padding: 2%;
     }
     
     .saludo img {
         border-radius: 180px;
-        width: 320px;
-        height: 320px;
+        width: 340px;
+        height: 340px;
     }
 
     .saludo h1, .about h1 {
@@ -79,6 +79,10 @@
         padding: 2%;
         margin: 1% auto 4%;
         color: midnightblue;
+    }
+
+    .saludo h1 {
+        width: 96%;
     }
 
     .about h1 {
@@ -95,7 +99,7 @@
     }
 
     .presentacion {
-        width: 80%;
+        width: 90%;
         background-color: blue;
         color: white;
         padding: 2%;
@@ -160,5 +164,65 @@
 
     .pcnt70 {
         width: 70%;
+    }
+
+    @media (max-width: 1024px) {
+
+    }
+
+    @media (max-width: 768px) {
+        .saludo img {
+            width: 250px;
+            height: 250px;
+            margin: auto;
+        }
+
+        .saludo {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .saludo .texto_saludo {
+            width: 96%;
+            margin: auto;
+        }
+
+        .texto_saludo h1 {
+            width: 80%;
+        }
+
+        .about h1 {
+            width: 94%;
+            margin: 1%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .about h1 {
+            width: 90%;
+        }
+        
+        .saludo {
+            display: flex;
+            flex-wrap: wrap;
+            width: 96%;
+        }
+
+        .saludo img {
+            border-radius: 500px;
+            width: 65%;
+            height: 65%;
+            margin: auto;
+        }
+
+        .datos {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .conocimiento {
+            width: 94%;
+            margin: 3%;
+        }
     }
 </style>
