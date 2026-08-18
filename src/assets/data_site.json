@@ -73,7 +73,7 @@
             "class": "pcnt85" 
         },
         { 
-            "nombre": "Investigación previa",
+            "nombre": "Benchmark",
             "class": "pcnt90"
     }],
     "trabajos": [ 
@@ -180,18 +180,6 @@
             "img2": "../src/assets/img/trabajos/branding/branding_002.png",
             "img3": "../src/assets/img/trabajos/branding/branding_003.png",
             "img4": "../src/assets/img/trabajos/branding/branding_004.png"
-        },
-        { 
-            "id": 9,
-            "nombre": "Ludocrónicas Orgullo 6",
-            "cliente": "Fundación Ludocrónicas", 
-            "avatar": "src/assets/img/previas/dis_006.png",
-            "informacion": "Diseño de afiche y gráficas para Instagram para evento 'Ludocrónicas Orgullo 6', realizado por la fundación Ludocrónicas en la Biblioteca de Pudahuel. Las gráficas incluían mapa del evento y plantillas para su uso, protagonizadas por los personajes del afiche (los cuales son de mi autoría).",
-            "haydemo": "no tiene demo disponible, pero puede ver sus aplicaciones",
-            "linkdemo": "#",
-            "img1": "../src/assets/img/trabajos/ludorgullo6/ludorgullo_001.png",
-            "img2": "../src/assets/img/trabajos/ludorgullo6/ludorgullo_002.png",
-            "img3": "../src/assets/img/trabajos/ludorgullo6/ludorgullo_003.png",
-            "img4": ""
+        
     }]
 }

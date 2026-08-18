@@ -21,7 +21,7 @@
                 <div class="presentacion">
                     <p>Soy diseñadora gráfica y me he dedicado al diseño web, material de difusión y asesoría en rubros de cultura, PyMEs, tecnología, banca y seguros, además de proyectos multidisciplinarios con desarrolladores back-end, investigadores y administradores de proyecto.</p>
                     <p>También tengo estudios en marketing digital, gestión de proyectos y actualmente me estoy especializando en el desarrollo front-end para la creación de aplicaciones digitales.</p>
-                    <p>Para más información puedes leer <a href="">mi CV</a> y ver mi <a href="http://www.github.com/fernandakauak">cuenta en Github</a>.</p>
+                    <p>Para más información puedes leer <a href="fernanda-kauak_cv2026.pdf" target="_blank">mi CV</a> y ver mi <a href="http://www.github.com/fernandakauak" target="_blank">cuenta en Github</a>.</p>
                 </div>
             </div>
         </article>

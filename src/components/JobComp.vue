@@ -38,11 +38,11 @@
 
     .registro h1, .registro h2, .registro h3 {
         width: 30%;
-        background-color: white;
+        background-color: midnightblue;
         border-radius: 50px;
         padding: 2%;
         margin: 1% auto 4%;
-        color: darkslategrey;
+        color: white;
     }
 
     .registro h1 {
@@ -52,15 +52,17 @@
     .registro h2 {
         padding: 1%;
         width: 20%;
-        margin: 1% auto;
+        margin: 4% auto 1%;
     }
 
     .registro h3 {
         margin: 0 auto;
         width: 80%;
-        background-color: darkslategrey;
+        background-color: mediumblue;
         color: white;
         padding: 2%;
+        font-size: 22px;
+        text-transform: uppercase;
     }
 
     .portafolio {
@@ -75,8 +77,8 @@
     .folio-info {
         width: 80%;
         font-size: 20px;
-        background-color: darkslategrey;
-        color: lightgray;
+        background-color: mediumblue;
+        color: white;
         padding: 2%;
         margin: auto;
         border: 10px dashed white;
@@ -87,19 +89,25 @@
         margin: 1%;
     }
 
+    .trabajo img {
+        border-radius: 100px;
+        border: 10px solid mediumblue;
+    }
+
     .trabajo button {
-        background-color: midnightblue;
-        color: white;
+        background-color: white;
+        color: midnightblue;
         padding: 2%;
         width: 30%;
-        border: 0;
+        margin: 1% auto;
         font-weight: bold;
         font-size: 18px;
         cursor: pointer;
+        border: 1px solid midnightblue;
     }
 
     .trabajo button:hover {
-        color: midnightblue;
-        background-color: white;
+        color: white;
+        background-color: midnightblue;
     }
 </style>
