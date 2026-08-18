@@ -87,6 +87,7 @@
 
     .about h1 {
         width: 50%;
+        margin-bottom: 2%;
     }
 
     .saludo a {
@@ -164,10 +165,6 @@
 
     .pcnt70 {
         width: 70%;
-    }
-
-    @media (max-width: 1024px) {
-
     }
 
     @media (max-width: 768px) {

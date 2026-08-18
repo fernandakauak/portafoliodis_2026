@@ -91,4 +91,30 @@
         font-size: 18px;
         font-weight: bold;
     }
+
+
+
+    @media (max-width: 1024px) {
+        .info h3 {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .fichadetalle .info p {
+            width: 90%;
+            margin: 0 auto 2%;
+        }
+
+        .fichadetalle .info h3 {
+            width: 90%;
+            margin-bottom: 4%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .fichadetalle .info h3 {
+            width: 100%;
+        }
+    }
 </style>

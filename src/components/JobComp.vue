@@ -110,4 +110,36 @@
         color: white;
         background-color: midnightblue;
     }
+
+
+    @media (max-width: 1024px) {
+        .registro h1 {
+            width: 55%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .trabajo {
+            width: 30%;
+        }
+
+        .registro h1 {
+            margin: 1% auto 1%;
+            width: 55%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .registro h1 {
+            width: 90%;
+        }
+
+        .registro h2 {
+            width: 50%;
+        }
+
+        .trabajo {
+            width: 100%;
+        }
+    }
 </style>
