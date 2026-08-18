@@ -116,5 +116,9 @@
         .fichadetalle .info h3 {
             width: 100%;
         }
+
+        .info .galeria img {
+            width: 100%;
+        }
     }
 </style>

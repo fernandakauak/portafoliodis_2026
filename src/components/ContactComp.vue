@@ -59,4 +59,24 @@
         background-color: lightblue;
         border-radius: 50px;
     }
+
+
+
+    @media (max-width: 480px) {
+        .contacto {
+            width: 92%;
+        }
+        .contacto h1.titulo {
+            width: 65%;
+        }
+
+        .contacto h2 {
+            width: 90%;
+            margin: 1% auto 2%;
+        }
+
+        .contacto h1.buendia {
+            width: 70%;
+        }
+    }
 </style>
